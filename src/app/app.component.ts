@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  url: string = 'https://falauniversidades.com.br/wp-content/uploads/2019/02/filme-breaking-bad-jesse-walter-1200x900.jpg';
+  url: string = 'https://www.tribunapr.com.br/wp-content/uploads/sites/1/2018/11/breaking-bad-825x550.jpg?a86372';
   description: string = 'Breaking Bad';
 }
