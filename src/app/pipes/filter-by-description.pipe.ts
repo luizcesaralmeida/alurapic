@@ -6,13 +6,14 @@ import { Photo } from '../model/photo';
 })
 export class FilterByDescriptionPipe implements PipeTransform {
 
-  transform(photos: Photo[], queryParam: string): Photo[] {
-    queryParam = queryParam.trim().toLowerCase();
+  transform(photos: Photo[], descriptionQuery: string): Photo[] {
+    descriptionQuery = descriptionQuery.trim().toLowerCase();
 
-    if(!queryParam.length)
+    if (!descriptionQuery) {
       return photos;
+    }
 
-    return photos.filter(photo => photo.description.toLowerCase().includes(queryParam));
+    return photos.filter(photo => photo.description.toLowerCase().includes(descriptionQuery));
   }
 
 }

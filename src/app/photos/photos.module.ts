@@ -8,6 +8,8 @@ import { PhotoListComponent } from './photo-list/photo-list.component';
 import { PhotoFormComponent } from './photo-form/photo-form.component';
 import { PhotosComponent } from './photo-list/photos/photos.component';
 import { FilterByDescriptionPipe } from '../pipes/filter-by-description.pipe';
+import { PhotoListResolver } from '../resolvers/photo-list.resolver';
+
 
 
 @NgModule({
@@ -20,6 +22,8 @@ import { FilterByDescriptionPipe } from '../pipes/filter-by-description.pipe';
     imports:      [ HttpClientModule, 
                     CommonModule
                   ],
-    providers:    [ PhotoService ]
+    providers:    [ PhotoService, 
+                    PhotoListResolver 
+                  ]
 })
 export class PhotosModule{}
