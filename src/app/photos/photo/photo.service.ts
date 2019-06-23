@@ -11,6 +11,6 @@ export class PhotoService{
     constructor(private httpClient: HttpClient ){}
 
     listFromUser(userName: string): Observable<Photo[]>{
-        return this.httpClient.get<Photo[]>(`${API}/${userName}/photos`);
+        return this.httpClient.get<Photo[]>( `${API}/${userName}/photos` );
     }
 }
