@@ -9,6 +9,7 @@ import { PhotoFormComponent } from './photo-form/photo-form.component';
 import { PhotosComponent } from './photo-list/photos/photos.component';
 import { FilterByDescriptionPipe } from '../pipes/filter-by-description.pipe';
 import { PhotoListResolver } from '../resolvers/photo-list.resolver';
+import { LoadButtonComponent } from './photo-list/load-button/load-button.component';
 
 
 
@@ -17,7 +18,8 @@ import { PhotoListResolver } from '../resolvers/photo-list.resolver';
                     PhotoListComponent,
                     PhotoFormComponent,
                     PhotosComponent,
-                    FilterByDescriptionPipe  
+                    FilterByDescriptionPipe,
+                    LoadButtonComponent  
                   ],
     imports:      [ HttpClientModule, 
                     CommonModule
